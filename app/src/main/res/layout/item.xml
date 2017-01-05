@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/box"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="#fff">
+
+
+
+        <Button
+            android:id="@+id/cn_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="connect"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_p"/>
+
+        <!--for three textview-->
+        <LinearLayout
+            android:id="@+id/text_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="device:"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name: xxxx"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="12dp"
+                android:textColor="#999"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address: xxxx"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
